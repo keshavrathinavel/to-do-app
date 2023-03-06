@@ -30,7 +30,7 @@ class NoteListState extends State<NoteList> {
 
     Widget myAppBar() {
       return AppBar(
-        title: Text('Notes', style: Theme.of(context).textTheme.headline5),
+        title: Text('Notes', style: Theme.of(context).textTheme.headlineSmall),
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.white,
@@ -76,7 +76,7 @@ class NoteListState extends State<NoteList> {
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Text('Click on the add button to add a new note!',
-                      style: Theme.of(context).textTheme.bodyText2),
+                      style: Theme.of(context).textTheme.bodyMedium),
                 ),
               ),
             )
@@ -123,7 +123,7 @@ class NoteListState extends State<NoteList> {
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
                           this.noteList[index].title,
-                          style: Theme.of(context).textTheme.bodyText2,
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ),
                     ),
@@ -145,7 +145,7 @@ class NoteListState extends State<NoteList> {
                             this.noteList[index].description == null
                                 ? ''
                                 : this.noteList[index].description,
-                            style: Theme.of(context).textTheme.bodyText1),
+                            style: Theme.of(context).textTheme.bodyLarge),
                       )
                     ],
                   ),
@@ -154,7 +154,7 @@ class NoteListState extends State<NoteList> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: <Widget>[
                       Text(this.noteList[index].date,
-                          style: Theme.of(context).textTheme.subtitle2),
+                          style: Theme.of(context).textTheme.titleSmall),
                     ])
               ],
             ),

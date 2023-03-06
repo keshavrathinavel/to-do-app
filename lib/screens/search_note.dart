@@ -13,7 +13,7 @@ class NotesSearch extends SearchDelegate<Note> {
         hintColor: Colors.black,
         primaryColor: Colors.white,
         textTheme: TextTheme(
-          headline6: TextStyle(
+          titleLarge: TextStyle(
               color: Colors.black, fontWeight: FontWeight.bold, fontSize: 16),
         ));
     assert(theme != null);
